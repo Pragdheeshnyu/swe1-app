@@ -1,6 +1,5 @@
 language: python
 python:
-  - "3.7"
   - "3.8"
   - "3.9"
 
@@ -17,7 +16,7 @@ before_script:
 script:
   - black --check .
   - flake8 .
-  - coverage run --source=polls manage.py test
+  # - coverage run --source=polls manage.py test
 
-after_script:
-  - coveralls
+# after_script:
+#   - coveralls
